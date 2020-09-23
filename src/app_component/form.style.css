@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;800&display=swap');
+
+* {
+    font-family: 'Prompt', sans-serif;
+    color: white;
+}
+
+body {
+    background: #2193b0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #6dd5ed, #2193b0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #6dd5ed, #2193b0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.form-heading {
+    font-weight: 800;
+    font-size: 60px;
+    border-bottom: 2px dotted white;
+}
+
+.container form {
+    margin-top: 3rem;
+}
+
+form input[name="city"],
+form input[name="country"] {
+    background-color: transparent;
+    color: white;
+    font-size: 30px;
+    border: 0;
+    border-bottom: 2px solid whitesmoke;
+    border-radius: 0;
+}
+
+.btn-weather {
+    background-color: white;
+    color: black;
+    font-size: 30px;
+}
+
+form input:focus {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border-color: white;
+}
+
+.form-control:focus {
+    color: white;
+    border-color: white;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+}
+
+
+/* Weather Component */
+
+.weather-font-size {
+    font-size: 55px;
+}
+
+.icon-size {
+    font-size: 130px;
+    padding-top: 30px;
+}
+
+.temp-font-size {
+    font-size: 90px;
+}
+
+.span-min-max {
+    font-size: 25px;
+}
+
+@media(max-width: 600px) {
+    .form-heading {
+        font-size: 25px;
+        border-bottom: 0px;
+        padding: 10px !important;
+    }
+
+    .container form {
+        margin-top: 0.5rem;
+    }
+
+    form input[name="city"],
+    form input[name="country"] {
+        font-size: 20px;
+    }
+
+    .btn-weather {
+        font-size: 20px;
+    }
+
+    /* Weather Component */
+
+    .weather-font-size {
+        font-size: 25px;
+    }
+
+    .icon-size {
+        font-size: 70px;
+        padding-top: 10px;
+    }
+
+    .temp-font-size {
+        font-size: 32px;
+    }
+
+    .span-min-max {
+        font-size: 12px;
+    }
+}
